@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="המרכז לרפואת הקהילה מוריה בחיפה — טיפול רפואי בגובה העיניים. מידע על המרפאה ומדריך למטופלים חדשים.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<title>המרכז לרפואת הקהילה מוריה | MCHC</title>
+<style>
+:root{--indigo:#302c71;--turquoise:#20aeb5;--cyan:#8bd0e5;--ivory:#f5f2ec;--white:#fff;--ink:#292820;--muted:#69675f;--line:#dedad1}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font:16px/1.8 "Arimo",Arial,sans-serif}a{color:inherit}.container{width:min(1160px,90%);margin-inline:auto}
+header{background:rgba(255,255,255,.97);border-bottom:1px solid #e8e4dc}.nav{min-height:100px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:inline-flex;align-items:center;flex-shrink:0}.brand img{display:block;width:min(300px,38vw);height:auto;border-radius:12px;filter:none!important}nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--indigo);font-size:.96rem}nav a:hover{color:var(--turquoise)}.language{border:1px solid var(--indigo);border-radius:7px;background:transparent;color:var(--indigo);padding:7px 12px;cursor:pointer;font:inherit}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:560px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(25,24,65,.78),rgba(25,24,65,.25)),url("clinic-hero.jpg") center/cover no-repeat,var(--indigo)}.hero-content{padding:85px 0;max-width:760px}.eyebrow{color:var(--cyan);font-weight:700;letter-spacing:.05em}.hero h1{font-family:"Playfair Display","Arimo",serif;font-weight:500;font-size:clamp(2.6rem,6vw,5rem);line-height:1.12;margin:18px 0}.hero p{max-width:670px;color:#f5f3fa;font-size:1.15rem;margin:0}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;padding:12px 21px;border-radius:4px;transition:transform .15s,background .15s}.button:hover{transform:translateY(-2px)}.button-primary{background:var(--turquoise);color:#102d30}.button-light{border:1px solid rgba(255,255,255,.75);color:white;background:rgba(255,255,255,.08)}
+.intro{padding:70px 0}.intro-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}.section-label{color:var(--turquoise);font-weight:700}.intro h2,.guide-panel h2{color:var(--indigo);font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.25;font-weight:500;margin:10px 0 16px}.intro p{color:var(--muted);font-size:1.08rem}.values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.value{background:#fff;border:1px solid #e8e4dc;padding:19px 20px}.value strong{display:block;color:var(--indigo);font-size:1.05rem}.value span{color:var(--muted);font-size:.95rem}
+.guide-band{background:#e7f4f3;padding:60px 0}.guide-panel{display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px;background:#fff;padding:clamp(24px,5vw,48px);border:1px solid #d8e8e6}.guide-panel h2{margin-top:0}.guide-panel p{color:var(--muted);max-width:720px}.guide-panel .button{white-space:nowrap}
+.contact{padding:58px 0}.contact h2{font-size:2rem;color:var(--indigo);font-weight:500;margin:0 0 18px}.contact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.contact-card{background:#fff;border:1px solid #e8e4dc;padding:19px}.contact-card strong{display:block;color:var(--indigo)}.contact-card a{color:var(--indigo);text-decoration-thickness:1px;text-underline-offset:3px}
+footer{background:#20291f;color:var(--ivory);padding:28px 0;font-size:.9rem}footer p{margin:4px 0}
+.whatsapp-float{position:fixed;z-index:1000;left:22px;bottom:22px;display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;background:#25D366;color:#073b22;text-decoration:none;font-weight:700;box-shadow:0 5px 18px rgba(0,0,0,.24);border:2px solid rgba(255,255,255,.95)}.whatsapp-float:hover{background:#20c75a;transform:translateY(-2px)}.whatsapp-float svg{width:25px;height:25px;flex:none;fill:currentColor}.whatsapp-label{font-size:.95rem}
+@media(max-width:800px){.nav{padding:15px 0;align-items:flex-start;flex-direction:column;gap:12px}.brand img{width:min(280px,75vw)}nav{gap:10px 16px}.hero{min-height:480px}.intro-grid{grid-template-columns:1fr;gap:25px}.guide-panel{grid-template-columns:1fr}.guide-panel .button{justify-self:start}.contact-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.hero{min-height:460px}.hero-content{padding:58px 0}.values,.contact-grid{grid-template-columns:1fr}.intro{padding:48px 0}.guide-band{padding:38px 0}.whatsapp-float{left:13px;bottom:13px;width:58px;height:58px;padding:0;border-radius:50%;justify-content:center}.whatsapp-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="brand" href="index.html" aria-label="MCHC home"><img src="logo.png" alt="Moriah Community Health Clinic — המרכז לרפואת הקהילה מוריה"></a>
+<nav aria-label="Main navigation">
+<a href="#about" data-he="אודות המרפאה" data-en="About us">אודות המרפאה</a>
+<a href="physicians-page.html" data-he="הצוות הרפואי" data-en="Our team">הצוות הרפואי</a>
+<a href="guide.html" data-he="מדריך למטופלים" data-en="Patient guide">מדריך למטופלים</a>
+<a href="#contact" data-he="יצירת קשר" data-en="Contact">יצירת קשר</a>
+<button class="language" id="language-toggle" type="button">English</button>
+</nav></div></header>
+
+<section class="hero"><div class="container"><div class="hero-content">
+<div class="eyebrow" data-he="המרכז לרפואת הקהילה מוריה · חיפה" data-en="Moriah Community Health Clinic · Haifa">המרכז לרפואת הקהילה מוריה · חיפה</div>
+<h1 data-he="רפואה שרואה את האדם כולו." data-en="Healthcare that sees the whole person.">רפואה שרואה את האדם כולו.</h1>
+<p data-he="טיפול רפואי מקצועי, אישי וקהילתי — מתוך הקשבה, שותפות והבנה שהבריאות שלנו קשורה גם לחיים שאנחנו חיים." data-en="Professional, personal, community-based care—grounded in listening, partnership, and the understanding that health is connected to the lives we lead.">טיפול רפואי מקצועי, אישי וקהילתי — מתוך הקשבה, שותפות והבנה שהבריאות שלנו קשורה גם לחיים שאנחנו חיים.</p>
+<div class="hero-actions">
+<a class="button button-primary" href="guide.html" data-he="מדריך למטופלים חדשים" data-en="Guide for new patients">מדריך למטופלים חדשים</a>
+<a class="button button-light" href="physicians-page.html" data-he="הכירו את הצוות" data-en="Meet our team">הכירו את הצוות</a>
+</div>
+</div></div></section>
+
+<section class="intro" id="about"><div class="container intro-grid">
+<div>
+<div class="section-label" data-he="הגישה שלנו" data-en="Our approach">הגישה שלנו</div>
+<h2 data-he="רפואה בגובה העיניים, עם מבט רחב." data-en="Care at eye level, with a wider view.">רפואה בגובה העיניים, עם מבט רחב.</h2>
+<p data-he="אנחנו מאמינים ששירות רפואי טוב מתחיל בהיכרות ובהקשבה. האדם שמגיע למרפאה הוא לא רק אוסף של תסמינים — הוא אדם שחי בתוך משפחה, קהילה וסביבה, וכל אלה חשובים לבריאותו." data-en="We believe good healthcare starts with knowing people and listening to them. A person who comes to the clinic is more than a collection of symptoms: they live within a family, community and environment, all of which matter to health.">אנחנו מאמינים ששירות רפואי טוב מתחיל בהיכרות ובהקשבה. האדם שמגיע למרפאה הוא לא רק אוסף של תסמינים — הוא אדם שחי בתוך משפחה, קהילה וסביבה, וכל אלה חשובים לבריאותו.</p>
+<p data-he="המרכז לרפואת הקהילה מוריה מעניק שירותי רפואת משפחה ומארח צוות רב-תחומי של אנשי מקצוע, כדי לעזור לכם לנווט את הדרך לבריאות טובה יותר." data-en="Moriah Community Health Clinic provides family medicine and brings together a multidisciplinary team to help you navigate your path toward better health.">המרכז לרפואת הקהילה מוריה מעניק שירותי רפואת משפחה ומארח צוות רב-תחומי של אנשי מקצוע, כדי לעזור לכם לנווט את הדרך לבריאות טובה יותר.</p>
+</div>
+<div class="values">
+<div class="value"><strong data-he="מקצועיות" data-en="Expertise">מקצועיות</strong><span data-he="רפואה מבוססת ידע ועדכנית." data-en="Evidence-informed, up-to-date care.">רפואה מבוססת ידע ועדכנית.</span></div>
+<div class="value"><strong data-he="הקשבה" data-en="Listening">הקשבה</strong><span data-he="מקום לסיפור שלכם ולמה שחשוב לכם." data-en="Space for your story and what matters to you.">מקום לסיפור שלכם ולמה שחשוב לכם.</span></div>
+<div class="value"><strong data-he="שותפות" data-en="Partnership">שותפות</strong><span data-he="קבלת החלטות יחד, בגובה העיניים." data-en="Making decisions together, as partners.">קבלת החלטות יחד, בגובה העיניים.</span></div>
+<div class="value"><strong data-he="קהילה" data-en="Community">קהילה</strong><span data-he="טיפול שרואה את האדם בהקשר חייו." data-en="Care that sees each person in the context of their life.">טיפול שרואה את האדם בהקשר חייו.</span></div>
+</div>
+</div></section>
+
+<section class="guide-band"><div class="container"><div class="guide-panel">
+<div><div class="section-label" data-he="חדש/ה במרפאה?" data-en="New to the clinic?">חדש/ה במרפאה?</div>
+<h2 data-he="כל מה שחשוב לדעת — במקום אחד." data-en="Everything you need to know—in one place.">כל מה שחשוב לדעת — במקום אחד.</h2>
+<p data-he="במדריך למטופלים תמצאו את שעות הפתיחה, דרכי יצירת הקשר, היכרות עם הצוות, הסבר על סוגי התורים והנחיות לשימוש בבקשות דיגיטליות, בדוא״ל ובוואטסאפ." data-en="Our patient guide covers opening hours, contact details, our team, appointment types, and how to use digital requests, email and WhatsApp.">במדריך למטופלים תמצאו את שעות הפתיחה, דרכי יצירת הקשר, היכרות עם הצוות, הסבר על סוגי התורים והנחיות לשימוש בבקשות דיגיטליות, בדוא״ל ובוואטסאפ.</p></div>
+<a class="button button-primary" href="guide.html" data-he="למדריך המלא ←" data-en="Read the full guide →">למדריך המלא ←</a>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="container">
+<div class="section-label" data-he="אנחנו כאן בשבילכם" data-en="We’re here to help">אנחנו כאן בשבילכם</div>
+<h2 data-he="יצירת קשר" data-en="Contact us">יצירת קשר</h2>
+<div class="contact-grid">
+<div class="contact-card"><strong data-he="טלפון המרפאה" data-en="Clinic telephone">טלפון המרפאה</strong><a href="tel:048340280" dir="ltr">04-8340280</a></div>
+<div class="contact-card"><strong data-he="דוא״ל" data-en="Email">דוא״ל</strong><a href="mailto:office@mchc.co.il">office@mchc.co.il</a></div>
+<div class="contact-card"><strong data-he="מדריך למטופלים" data-en="Patient guide">מדריך למטופלים</strong><a href="guide.html" data-he="שעות, תורים ונהלים" data-en="Hours, appointments and policies">שעות, תורים ונהלים</a></div>
+</div>
+</div></section>
+
+<footer><div class="container"><strong data-he="המרכז לרפואת הקהילה מוריה" data-en="Moriah Community Health Clinic">המרכז לרפואת הקהילה מוריה</strong><p data-he="טיפול רפואי איכותי לקהילת חיפה" data-en="Quality healthcare for the Haifa community">טיפול רפואי איכותי לקהילת חיפה</p><p>© 2026 <span data-he="כל הזכויות שמורות." data-en="All rights reserved.">כל הזכויות שמורות.</span></p></div></footer>
+
+<script>
+const toggle=document.querySelector('#language-toggle');
+toggle.addEventListener('click',()=>{const lang=document.documentElement.lang==='he'?'en':'he';document.documentElement.lang=lang;document.documentElement.dir=lang==='he'?'rtl':'ltr';document.querySelectorAll('[data-he][data-en]').forEach(el=>{el.textContent=el.dataset[lang]});toggle.textContent=lang==='he'?'English':'עברית';document.querySelector('meta[name="description"]').content=lang==='he'?'המרכז לרפואת הקהילה מוריה בחיפה — טיפול רפואי בגובה העיניים. מידע על המרפאה ומדריך למטופלים חדשים.':'Moriah Community Health Clinic in Haifa — personal, community-based care and a guide for new patients.';});
+</script>
+
+<!-- WhatsApp floating button: fixed bottom-left, visible on desktop and mobile.
+     Verify the clinic number is registered with WhatsApp before publishing. -->
+<a class="whatsapp-float" href="https://wa.me/97248340280" target="_blank" rel="noopener noreferrer" aria-label="Contact MCHC on WhatsApp">
+<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3C8.85 3 3.02 8.78 3.02 15.9c0 2.28.61 4.51 1.77 6.48L3 29l6.83-1.77a13.1 13.1 0 0 0 6.19 1.57h.01c7.16 0 12.99-5.79 12.99-12.9 0-3.45-1.35-6.69-3.8-9.13A12.9 12.9 0 0 0 16.02 3zm0 23.62h-.01a10.8 10.8 0 0 1-5.5-1.5l-.39-.23-4.05 1.05 1.08-3.93-.25-.4a10.65 10.65 0 0 1-1.64-5.7c0-5.91 4.84-10.72 10.77-10.72 2.87 0 5.57 1.11 7.6 3.14a10.63 10.63 0 0 1 3.15 7.58c0 5.91-4.83 10.71-10.76 10.71zm5.91-8.03c-.32-.16-1.9-.93-2.2-1.04-.3-.11-.51-.16-.73.16-.21.32-.83 1.04-1.02 1.25-.19.21-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.59-.95-.84-1.59-1.88-1.78-2.2-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.56-.08-.16-.73-1.74-1-2.38-.26-.62-.53-.54-.73-.55h-.62c-.21 0-.56.08-.86.4-.3.32-1.13 1.1-1.13 2.68s1.16 3.1 1.32 3.31c.16.21 2.28 3.47 5.52 4.86.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/></svg>
+<span class="whatsapp-label" data-he="וואטסאפ" data-en="WhatsApp">וואטסאפ</span>
+</a>
+</body>
+</html>
