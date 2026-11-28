@@ -4,10 +4,6 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="המרכז לרפואת הקהילה מוריה בחיפה — רופאים מומחים, רפואת משפחה ושירותים רפואיים במרפאה קהילתית אחת.">
 <title>המרכז לרפואת הקהילה מוריה | MCHC</title>
-<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
-<link rel="shortcut icon" href="/favicon.ico">
-<link rel="apple-touch-icon" href="/favicon.png">
-
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -99,17 +95,6 @@ document.querySelector('#year').textContent=new Date().getFullYear();
 </script>
 <script>
 window.TallyConfig={formId:"2EaZpp",popup:{width:411,emoji:{text:"👋",animation:"wave"},hideTitle:true,alignLeft:true,autoClose:5000,showOnce:true,doNotShowAfterSubmit:true}};
-(function(){
-  const params=new URLSearchParams(window.location.search);
-  if(params.get('contact')!=='1') return;
-  const tallyScript=document.createElement('script');
-  tallyScript.src='https://tally.so/widgets/embed.js';
-  tallyScript.async=true;
-  tallyScript.onload=function(){
-    if(window.Tally && typeof window.Tally.openPopup==='function'){
-      window.Tally.openPopup('2EaZpp',{layout:'modal',width:411,emoji:{text:'👋',animation:'wave'},hideTitle:true,alignLeft:true,autoClose:5000,showOnce:true,doNotShowAfterSubmit:true});
-    }
-  };
-  document.head.appendChild(tallyScript);
-})();
-</script></body></html>
+</script>
+<script async src="https://tally.so/widgets/embed.js"></script>
+</body></html>
